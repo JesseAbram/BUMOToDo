@@ -205,6 +205,7 @@ class TaskInputs extends Component {
     console.log(transactionInfo);
 
   }
+
   handleFormSubmit = (e) => {
     e.preventDefault();
   }
@@ -270,12 +271,7 @@ class TaskInputs extends Component {
           <button
             className="button is-primary"
             onClick={() => this.handleWrieBlockchain()}>
-            send
-     </button>
-          <button
-            className="button is-primary"
-            onClick={() => this.handleFinishtask()}>
-            mark done
+            Create Task
      </button>
         </div>
 
