@@ -195,7 +195,7 @@ SetStateOfTask = (desc) => {
             className="button is-primary"
             onClick={this.handleReadBlockcahin}
           >
-          Refresh 🔄 To Update List
+          Click To Update List
 
           </button>
           <div align="left" >
