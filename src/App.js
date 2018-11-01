@@ -92,7 +92,9 @@ class App extends Component {
           >
             read tasks
           </button>
-          {this.renderList()}
+          <div align="left" >
+            {this.renderList()}
+          </div>
         </header>
       </div>
     );
