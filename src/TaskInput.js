@@ -26,7 +26,7 @@ class TaskInputs extends Component {
 
 
     const operationInfo = await sdk.operation.contractInvokeByBUOperation({
-      contractAddress: 'buQswKLuqPUSDQjsfqh4CZ9i3NPWevTNuvnk',
+      contractAddress: 'buQB9U1yHFYuJYSWja9F4LtGPSs7Fdk1Vnq6',
       input: JSON.stringify({
         method: 'add',
         params: {
@@ -116,7 +116,7 @@ class TaskInputs extends Component {
 
   handleFinishtask = async (e) => {
     const operationInfo = await sdk.operation.contractInvokeByBUOperation({
-      contractAddress: 'buQswKLuqPUSDQjsfqh4CZ9i3NPWevTNuvnk',
+      contractAddress: 'buQB9U1yHFYuJYSWja9F4LtGPSs7Fdk1Vnq6',
       input: JSON.stringify({
         method: 'done',
         params: {

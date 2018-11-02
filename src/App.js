@@ -25,7 +25,7 @@ class App extends Component {
     try {
       const data = await sdk.contract.call({
         optType: 2,
-        contractAddress: 'buQswKLuqPUSDQjsfqh4CZ9i3NPWevTNuvnk',
+        contractAddress: 'buQB9U1yHFYuJYSWja9F4LtGPSs7Fdk1Vnq6',
       });
 
       // Fetch Data
@@ -50,7 +50,7 @@ class App extends Component {
 
   handleFinishtask = async (e) => {
     const operationInfo = await sdk.operation.contractInvokeByBUOperation({
-      contractAddress: 'buQswKLuqPUSDQjsfqh4CZ9i3NPWevTNuvnk',
+      contractAddress: 'buQB9U1yHFYuJYSWja9F4LtGPSs7Fdk1Vnq6',
       input: JSON.stringify({
         method: 'done',
         params: {
@@ -156,13 +156,13 @@ SetStateOfTask = (desc) => {
     const toDoListElements = currentTasks.map((task, index) => {
 
       return (
-        <li key={`${index} ${task.dec || 'ok'}`}>
+        <li key={`${index} ${task.dec || 'ok'}`} style={{marginBottom: '10px'}}>
           {task.desc || <em>Task description not set</em>}{' '}{task.completed ? <b>✓</b> : <b>✗</b>}
           <button
             className="button is-primary"
-            styles={{align: "right", width: "48", height: "48"}}
+            style={{float: 'right'}}
             onClick={() => this.SetStateOfTask(task.desc)}>
-            Mark As Done
+            Done?
             </button>
         </li>
       )
@@ -195,7 +195,7 @@ SetStateOfTask = (desc) => {
             className="button is-primary"
             onClick={this.handleReadBlockcahin}
           >
-          Click To Update List
+          Update List
 
           </button>
           <div align="left" >
