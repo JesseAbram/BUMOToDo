@@ -74,10 +74,8 @@ class App extends Component {
       console.log(accountInfo);
       return;
     }
-    let non = accountInfo.result.nonce;
-    let nonc = parseInt(non.substring(0)) + 1;
-    let nonce = String(nonc);
-
+    let nonc = Number(accountInfo.result.nonce) + 1;
+    let nonce = nonc.toString();
     console.log(nonce);
 
 
